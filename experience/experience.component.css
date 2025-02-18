@@ -1,0 +1,41 @@
+/* experience.component.css */
+.upwork-logo {
+  height: 30px;
+  filter: brightness(0) invert(0.68) sepia(1) hue-rotate(80deg) saturate(500%);
+}
+
+.badge {
+  background-color: #374151 !important;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.card {
+  background-color: #1e293b !important;
+  border-radius: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+}
+
+.text-secondary {
+  color: #94a3b8 !important;
+}

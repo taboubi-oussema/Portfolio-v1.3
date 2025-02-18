@@ -1,1 +1,49 @@
-<p>experience works!</p>
+<div style="background-color: #030712">
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <span
+        class="badge bg-secondary rounded-pill px-4 py-2"
+        style="color: #d1d5db"
+        >Experience</span
+      >
+    </div>
+
+    <p class="text-light text-center mb-5">
+      Here is a quick summary of my most recent experiences:
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div
+          class="card bg-dark text-light mb-4 border-0"
+          *ngFor="let item of Experience"
+        >
+          <div class="card-body p-4">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="d-flex align-items-center h-100">
+                  <img
+                    src="../../assets/logo_bdsi.png"
+                    alt="Upwork"
+                    class="upwork-logo"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h5 class="card-title">Sr. Frontend Developer</h5>
+                <ul class="text-secondary mt-3">
+                  <li *ngFor="let text of item.Text">
+                    {{ text }}
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <span class="text-secondary">{{ item.date }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
