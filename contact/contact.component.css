@@ -1,0 +1,91 @@
+.contact-section {
+
+  background-color: #0B0C13;
+
+  min-height: 60vh;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.contact-heading {
+
+  font-size: 1.5rem;
+
+  line-height: 1.5;
+
+  color: #98999A;
+
+}
+
+.contact-link {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 1.5rem;
+
+  font-weight: 500;
+
+}
+
+.contact-link:hover {
+
+  color: #007bff;
+
+}
+
+.copy-btn {
+
+  background: none;
+
+  border: none;
+
+  color: #98999A;
+
+  padding: 0.5rem;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+}
+
+.copy-btn:hover {
+
+  color: white;
+
+  background-color: #2D2E36;
+
+}
+
+.social-links {
+
+  display: flex;
+
+  gap: 1rem;
+
+  justify-content: center;
+
+}
+
+.social-link {
+
+  color: #98999A;
+
+  font-size: 1.5rem;
+
+  transition: color 0.3s ease;
+
+}
+
+.social-link:hover {
+
+  color: white;
+
+}

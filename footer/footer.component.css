@@ -1,0 +1,26 @@
+.footer {
+  background-color: #0B0C13;
+  border-top: 1px solid #2D2E36;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover::after {
+  transform: scaleX(1);
+}
