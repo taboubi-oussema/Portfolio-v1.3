@@ -24,19 +24,25 @@
                   {{ tech }}
                 </span>
               </div>
-              <a
-                [href]="project.link"
-                target="_blank"
-                class="launch-icon-btn"
-                title="Open project"
-              >
-                <img
-                  src="../../assets/box-arrow-up-right.svg"
-                  alt="Project Link"
-                  width="24"
-                  height="24"
-                />
-              </a>
+              <div style="display: flex; align-items: center; gap: 15px">
+                <a
+                  *ngIf="project.Website"
+                  [href]="project.linkWeb"
+                  target="_blank"
+                  class="launch-icon-btn"
+                  title="Open project"
+                >
+                  <img
+                    src="../../assets/box-arrow-up-right.svg"
+                    alt="Project Link"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+                <a [href]="project.linkGit" target="_blank" class="text-light"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
             </div>
           </div>
 

@@ -25,7 +25,11 @@ export class SkillsComponent {
     },
     {
       image: "../../assets/angular.png",
-      name: "angular",
+      name: "Angular",
+    },
+    {
+      image: "../../assets/bootstrap-removebg-preview.png",
+      name: "Bootstrap",
     },
   ];
 }

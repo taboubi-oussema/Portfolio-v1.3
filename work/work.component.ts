@@ -9,6 +9,7 @@ export class WorkComponent {
   projects = [
     {
       title: "Social Media Backend API",
+      Website: false,
       reversed: false,
       description:
         "This is the backend API for a social media application that provides a range of powerful features to users. API is designed to provide a seamless and efficient experience, allowing users to interact with the app in meaningful ways.",
@@ -25,7 +26,28 @@ export class WorkComponent {
       ],
       imageUrl:
         "../../assets/DALL·E 2025-02-18 19.07.36 - A high-tech digital network visualizing a Social Media Backend API. The image features interconnected API endpoints, database symbols, cloud computing.webp",
-      link: "https://github.com/taboubi-oussema/-Social-Media-Backend-API",
+      linkGit: "https://github.com/taboubi-oussema/-Social-Media-Backend-API",
+    },
+    {
+      title: "Portfolio Website Template",
+      Website: true,
+      reversed: true,
+      description:
+        "This project is a personal profile website I created to showcase my skills and interests. it features a clean and responsive design that adapts to various screen sizes. The site includes sections for my biography, skills, and projects, providing a comprehensive view of my background and capabilities.",
+      technologies: ["HTML", "CSS", "JAVASCRIPT", "Font Awesome"],
+      imageUrl: "../../assets/personal profile website .png",
+      linkWeb: "https://taboubi-oussema.github.io/Portfolio-v1.1/",
+      linkGit: "https://github.com/taboubi-oussema/Portfolio-v1.1",
+    },
+    {
+      title: "Fun Geography Competition Game.",
+      Website: true,
+      reversed: false,
+      description:"The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
+      technologies: ["HTML", "CSS", "JAVASCRIPT"],
+      imageUrl: "../../assets/Geography Competition game .png",
+      linkWeb: "https://taboubi-oussema.github.io/Geography-competition/",
+      linkGit: "https://github.com/taboubi-oussema/Geography-competition",
     },
   ];
 }
