@@ -10,9 +10,20 @@
           class="row g-0"
           [ngClass]="{ 'flex-row-reverse': project.reversed }"
         >
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <div class="card-body p-4">
               <h3 class="card-title mb-3">{{ project.title }}</h3>
+
+              <!-- Mobile-only image -->
+              <div class="d-block d-md-none project-image-container mb-3">
+                <img
+                  [src]="project.imageUrl"
+                  class="img-fluid rounded"
+                  [alt]="project.title"
+                  width="480"
+                  height="384"
+                />
+              </div>
 
               <p class="card-text mb-4">{{ project.description }}</p>
 
@@ -46,8 +57,8 @@
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="project-image-container">
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="project-image-container d-none d-md-block">
               <img
                 [src]="project.imageUrl"
                 class="img-fluid rounded"
