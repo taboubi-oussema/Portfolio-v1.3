@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class ExperienceComponent {
   Experience = [
     {
-      title: "Sr. Backend Developer",
+      title: "Software Engineer (Backend Focus)",
       date: "2025/01 – 2025/02",
       Text: [
         "Created a detailed dashboard with Angular",
