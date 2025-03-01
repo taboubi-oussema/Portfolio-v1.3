@@ -1,11 +1,14 @@
-import { Component } from "@angular/core";
-
+import { Component, OnInit } from "@angular/core";
+import * as AOS from "aos";
 @Component({
   selector: "app-work",
   templateUrl: "./work.component.html",
   styleUrls: ["./work.component.css"],
 })
-export class WorkComponent {
+export class WorkComponent implements OnInit {
+  ngOnInit() {
+    AOS.init();
+  }
   projects = [
     {
       title: "Social Media Backend API",
@@ -43,7 +46,8 @@ export class WorkComponent {
       title: "Fun Geography Competition Game",
       Website: true,
       reversed: false,
-      description:"The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
+      description:
+        "The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
       technologies: ["HTML", "CSS", "JAVASCRIPT"],
       imageUrl: "../../assets/Geography Competition game .png",
       linkWeb: "https://taboubi-oussema.github.io/Geography-competition/",
@@ -53,8 +57,9 @@ export class WorkComponent {
       title: "Admin Dashboard",
       Website: true,
       reversed: true,
-      description:"An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
-      technologies: ["Angular", "CSS", "Ngx Charts","Font Awesome"],
+      description:
+        "An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
+      technologies: ["Angular", "CSS", "Ngx Charts", "Font Awesome"],
       imageUrl: "../../assets/DashStack.png",
       linkWeb: "https://taboubi-ousama-admin-dashb0ard.web.app/",
       linkGit: "https://github.com/taboubi-oussema/Admin-Dashboard",

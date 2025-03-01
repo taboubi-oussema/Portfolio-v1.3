@@ -1,32 +1,36 @@
 <div style="background-color: #111827">
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="skills-container p-4 border border-primary-subtle rounded">
-          <div class="text-center mb-4">
-            <span
-              class="badge bg-secondary rounded-pill px-4 py-2"
-              style="color: #d1d5db"
-              >Skills</span
-            >
-          </div>
-
-          <p class="text-light text-center mb-5">
-            The skills, tools and technologies I am really good at:
-          </p>
-
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
           <div
-            class="row row-cols-2 row-cols-md-4 row-cols-lg-8 g-4 justify-content-center"
+            class="skills-container p-4 border border-primary-subtle rounded"
           >
-            <div class="col text-center" *ngFor="let item of skills">
-              <div class="skill-item mx-auto mb-2">
-                <img
-                  src="{{ item.image }}"
-                  alt="{{ item.name }}"
-                  class="img-fluid p-2"
-                />
+            <div class="text-center mb-4">
+              <span
+                class="badge bg-secondary rounded-pill px-4 py-2"
+                style="color: #d1d5db"
+                >Skills</span
+              >
+            </div>
+
+            <p class="text-light text-center mb-5">
+              The skills, tools and technologies I am really good at:
+            </p>
+
+            <div
+              class="row row-cols-2 row-cols-md-4 row-cols-lg-8 g-4 justify-content-center"
+            >
+              <div class="col text-center" *ngFor="let item of skills">
+                <div class="skill-item mx-auto mb-2">
+                  <img
+                    src="{{ item.image }}"
+                    alt="{{ item.name }}"
+                    class="img-fluid p-2"
+                  />
+                </div>
+                <p class="skill-name" style="color: #d1d5db">{{ item.name }}</p>
               </div>
-              <p class="skill-name" style="color: #d1d5db">{{ item.name }}</p>
             </div>
           </div>
         </div>

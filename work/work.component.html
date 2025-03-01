@@ -1,21 +1,70 @@
 <section class="work-section text-light py-5" style="background-color: #111827">
   <div class="container">
-    <h2 class="text-center mb-5">
+    <h2 class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
       Some of the noteworthy projects I have built:
     </h2>
-
     <div class="project-cards">
-      <div class="card bg-dark-subtle mb-4" *ngFor="let project of projects">
+      <div>
         <div
-          class="row g-0"
-          [ngClass]="{ 'flex-row-reverse': project.reversed }"
+          class="card bg-dark-subtle mb-4"
+          *ngFor="let project of projects; let i = index"
+          [attr.data-aos]="project.reversed ? 'fade-left' : 'fade-right'"
+          [attr.data-aos-duration]="1200"
+          [attr.data-aos-delay]="i * 100"
+          [attr.data-aos-easing]="'ease-out-cubic'"
         >
-          <div class="col-md-6 order-2 order-md-1">
-            <div class="card-body p-4">
-              <h3 class="card-title mb-3">{{ project.title }}</h3>
+          <div
+            class="row g-0"
+            [ngClass]="{ 'flex-row-reverse': project.reversed }"
+          >
+            <div class="col-md-6 order-2 order-md-1">
+              <div class="card-body p-4">
+                <h3 class="card-title mb-3">{{ project.title }}</h3>
 
-              <!-- Mobile-only image -->
-              <div class="d-block d-md-none project-image-container mb-3">
+                <div class="d-block d-md-none project-image-container mb-3">
+                  <img
+                    [src]="project.imageUrl"
+                    class="img-fluid rounded"
+                    [alt]="project.title"
+                    width="480"
+                    height="384"
+                  />
+                </div>
+
+                <p class="card-text mb-4">{{ project.description }}</p>
+
+                <div class="technologies" style="margin-bottom: 50px">
+                  <span
+                    class="badge rounded-pill bg-dark text-light mx-2 mb-2"
+                    *ngFor="let tech of project.technologies"
+                  >
+                    {{ tech }}
+                  </span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px">
+                  <a
+                    *ngIf="project.Website"
+                    [href]="project.linkWeb"
+                    target="_blank"
+                    class="launch-icon-btn"
+                    title="Open project"
+                  >
+                    <img
+                      src="../../assets/box-arrow-up-right.svg"
+                      alt="Project Link"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                  <a [href]="project.linkGit" target="_blank" class="text-light"
+                    ><i class="fa-brands fa-github fa-xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="project-image-container d-none d-md-block">
                 <img
                   [src]="project.imageUrl"
                   class="img-fluid rounded"
@@ -24,48 +73,6 @@
                   height="384"
                 />
               </div>
-
-              <p class="card-text mb-4">{{ project.description }}</p>
-
-              <div class="technologies" style="margin-bottom: 50px">
-                <span
-                  class="badge rounded-pill bg-dark text-light mx-2 mb-2"
-                  *ngFor="let tech of project.technologies"
-                >
-                  {{ tech }}
-                </span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 15px">
-                <a
-                  *ngIf="project.Website"
-                  [href]="project.linkWeb"
-                  target="_blank"
-                  class="launch-icon-btn"
-                  title="Open project"
-                >
-                  <img
-                    src="../../assets/box-arrow-up-right.svg"
-                    alt="Project Link"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-                <a [href]="project.linkGit" target="_blank" class="text-light"
-                  ><i class="fa-brands fa-github fa-xl"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 order-1 order-md-2">
-            <div class="project-image-container d-none d-md-block">
-              <img
-                [src]="project.imageUrl"
-                class="img-fluid rounded"
-                [alt]="project.title"
-                width="480"
-                height="384"
-              />
             </div>
           </div>
         </div>
