@@ -32,9 +32,31 @@ export class WorkComponent implements OnInit {
       linkGit: "https://github.com/taboubi-oussema/-Social-Media-Backend-API",
     },
     {
+      title: "Real-Time Chat Application API",
+      Website: false,
+      reversed: true,
+      description:
+        "Developing a chat platform that enables users to communicate instantly. This project involves setting up a server with WebSocket for real-time messaging, implementing secure user authentication, designing a functional chat interface, and managing various chat rooms.",
+      technologies: [
+        "nodemon",
+        "bcryptjs",
+        "dotenv",
+        "express",
+        "Socket.io",
+        "express-async-handler",
+        "joi",
+        "jsonwebtoken",
+        "mongoose",
+        "multer",
+      ],
+      imageUrl: "../../assets/Real-Time Chat Application APIs.png",
+      linkGit:
+        "https://github.com/taboubi-oussema/Real-Time-Chat-Application-API",
+    },
+    {
       title: "Portfolio Website Template",
       Website: true,
-      reversed: true,
+      reversed: false,
       description:
         "This project is a personal profile website I created to showcase my skills and interests. it features a clean and responsive design that adapts to various screen sizes. The site includes sections for my biography, skills, and projects, providing a comprehensive view of my background and capabilities.",
       technologies: ["HTML", "CSS", "JAVASCRIPT", "Font Awesome"],
@@ -45,7 +67,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Fun Geography Competition Game",
       Website: true,
-      reversed: false,
+      reversed: true,
       description:
         "The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
       technologies: ["HTML", "CSS", "JAVASCRIPT"],
@@ -56,7 +78,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Admin Dashboard",
       Website: true,
-      reversed: true,
+      reversed: false,
       description:
         "An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
       technologies: ["Angular", "CSS", "Ngx Charts", "Font Awesome"],
