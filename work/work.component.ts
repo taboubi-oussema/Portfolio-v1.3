@@ -33,7 +33,7 @@ export class WorkComponent implements OnInit {
     },
     {
       title: "Real-Time Chat Application API",
-      Website: false,
+      Website: true,
       reversed: true,
       description:
         "Developing a chat platform that enables users to communicate instantly. This project involves setting up a server with WebSocket for real-time messaging, implementing secure user authentication, designing a functional chat interface, and managing various chat rooms.",
@@ -48,8 +48,12 @@ export class WorkComponent implements OnInit {
         "jsonwebtoken",
         "mongoose",
         "multer",
+        "Angular",
+        "Bootstrap",
       ],
       imageUrl: "../../assets/Real-Time Chat Application APIs.png",
+      linkWeb:
+        "https://real-time-chat-application-api-production-9728.up.railway.app/",
       linkGit:
         "https://github.com/taboubi-oussema/Real-Time-Chat-Application-API",
     },
@@ -81,7 +85,13 @@ export class WorkComponent implements OnInit {
       reversed: false,
       description:
         "An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
-      technologies: ["Angular", "CSS", "Ngx Charts", "Font Awesome"],
+      technologies: [
+        "Angular",
+        "CSS",
+        "Ngx Charts",
+        "Font Awesome",
+        "Bootstrap",
+      ],
       imageUrl: "../../assets/DashStack.png",
       linkWeb: "https://taboubi-ousama-admin-dashb0ard.web.app/",
       linkGit: "https://github.com/taboubi-oussema/Admin-Dashboard",
