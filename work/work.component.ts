@@ -45,7 +45,7 @@ export class WorkComponent implements OnInit {
         "mongoose",
         "Angular",
         "Bootstrap",
-        
+
       ],
       imageUrl: "../../assets/Real-Time Chat Application APIs.png",
       linkWeb:
@@ -54,7 +54,7 @@ export class WorkComponent implements OnInit {
         "https://github.com/taboubi-oussema/Real-Time-Chat-Application-API",
     },
     {
-      title: "Portfolio Website Template",
+      title: "Portfolio Website ",
       Website: true,
       reversed: false,
       description:
