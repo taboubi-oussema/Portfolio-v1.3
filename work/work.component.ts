@@ -45,6 +45,7 @@ export class WorkComponent implements OnInit {
         "mongoose",
         "Angular",
         "Bootstrap",
+        
       ],
       imageUrl: "../../assets/Real-Time Chat Application APIs.png",
       linkWeb:
