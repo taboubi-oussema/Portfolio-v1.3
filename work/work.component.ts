@@ -35,7 +35,7 @@ export class WorkComponent implements OnInit {
       title: "Real-Time Chat Application API",
       Website: true,
       reversed: true,
-      description: 
+      description:
         "Developing  a chat platform that enables users to communicate instantly. This project involves setting up a server with WebSocket for real-time messaging, implementing secure user authentication, designing a functional chat interface, and managing various chat rooms.",
       technologies: [
         "nodemon",
@@ -43,7 +43,7 @@ export class WorkComponent implements OnInit {
         "express",
         "Socket.io",
         "mongoose",
-        "Angular",
+        "Angular", 
         "Bootstrap",
 
       ],
