@@ -19,12 +19,12 @@ export class WorkComponent implements OnInit {
       technologies: [
         "nodemon",
         "bcryptjs",
-        
         "dotenv",
         "express",
         "express-async-handler",
         "joi",
         "jsonwebtoken",
+        
         "mongoose",
         "multer",
       ],
