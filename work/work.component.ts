@@ -24,7 +24,6 @@ export class WorkComponent implements OnInit {
         "express-async-handler",
         "joi",
         "jsonwebtoken",
-        
         "mongoose",
         "multer",
       ],
