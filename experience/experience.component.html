@@ -1,5 +1,4 @@
-<div style="background-color: #030712 ;height: 100vh">
-  <div data-aos="zoom-in-up" data-aos-duration="1000">
+<div style="background-color: #030712">
   <div class="container py-5">
     <div class="text-center mb-4">
       <span
@@ -13,25 +12,28 @@
       Here is a quick summary of my most recent experiences:
     </p>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center"
+
+    >
       <div class="col-lg-10">
         <div
           class="card bg-dark text-light mb-4 border-0"
-          *ngFor="let item of Experience"
+          *ngFor="let item of Experience ; let i = index"
+          [attr.data-aos]="item.reversed ? 'fade-left' : 'fade-right'"
+          [attr.data-aos-duration]="1200"
+          [attr.data-aos-delay]="i * 100"
+          [attr.data-aos-easing]="'ease-out-cubic'"
         >
+
           <div class="card-body p-4">
             <div class="row">
               <div class="col-md-3">
                 <div class="d-flex align-items-center h-100">
-                  <img
-                    src="../../assets/logo_bdsi.png"
-                    alt="Upwork"
-                    class="upwork-logo"
-                  />
+                  <img [src]="item.img" alt="Upwork" class="upwork-logo" />
                 </div>
               </div>
               <div class="col-md-6">
-                <h5 class="card-title">{{item.title}}</h5>
+                <h5 class="card-title">{{ item.title }}</h5>
                 <ul class="text-secondary mt-3">
                   <li *ngFor="let text of item.Text">
                     {{ text }}
@@ -47,5 +49,4 @@
       </div>
     </div>
   </div>
-</div>
 </div>
