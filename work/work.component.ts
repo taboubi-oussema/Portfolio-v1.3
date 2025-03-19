@@ -61,7 +61,7 @@ export class WorkComponent implements OnInit {
         "This project is a personal profile website I created to showcase my skills and interests. it features a clean and responsive design that adapts to various screen sizes. The site includes sections for my biography, skills, and projects, providing a comprehensive view of my background and capabilities.",
       technologies: ["HTML", "CSS", "JAVASCRIPT", "Font Awesome"],
       imageUrl: "../../assets/personal profile website .png",
-      linkWeb: "https://taboubi-oussema.github.io/Portfolio-v1.1/",
+      linkWeb: "https://taboubi-oussema.github.io/Portfolio-v1.1/ ",
       linkGit: "https://github.com/taboubi-oussema/Portfolio-v1.1",
     },
     {
