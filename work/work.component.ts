@@ -65,7 +65,7 @@ export class WorkComponent implements OnInit {
       linkGit: "https://github.com/taboubi-oussema/Portfolio-v1.1",
     },
     {
-      title: "Fun Geography Competition Game",
+      title: "Fun Geography Competition  Game",
       Website: true,
       reversed: true,
       description:
