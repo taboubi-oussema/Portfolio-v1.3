@@ -16,8 +16,8 @@ export class ExperienceComponent {
         "Understood how computers communicate in a network",
         "Observed and participated in teamwork for problem-solving",
       ],
-      img:"../../assets/telecom.png",
-      reversed:true,
+      img: "../../assets/telecom.png",
+      reversed: true,
     },
 
     {
@@ -29,8 +29,8 @@ export class ExperienceComponent {
         "Developed robust APIs with Node.js",
         "Contributed to open-source projects",
       ],
-      img:"../../assets/logo_bdsi.png",
-      reversed:false,
+      img: "../../assets/logo_bdsi.png",
+      reversed: false,
     },
   ];
 }

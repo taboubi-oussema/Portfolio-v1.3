@@ -12,19 +12,16 @@
       Here is a quick summary of my most recent experiences:
     </p>
 
-    <div class="row justify-content-center"
-
-    >
+    <div class="row justify-content-center">
       <div class="col-lg-10">
         <div
           class="card bg-dark text-light mb-4 border-0"
-          *ngFor="let item of Experience ; let i = index"
+          *ngFor="let item of Experience; let i = index"
           [attr.data-aos]="item.reversed ? 'fade-left' : 'fade-right'"
           [attr.data-aos-duration]="1200"
           [attr.data-aos-delay]="i * 100"
           [attr.data-aos-easing]="'ease-out-cubic'"
         >
-
           <div class="card-body p-4">
             <div class="row">
               <div class="col-md-3">

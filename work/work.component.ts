@@ -11,9 +11,28 @@ export class WorkComponent implements OnInit {
   }
   projects = [
     {
-      title: "Social Media Backend API",
+      title: "Clone API LinkedIn",
       Website: false,
       reversed: false,
+      description:
+        "A comprehensive RESTful API clone of LinkedIn built with Node.js, Express, and MongoDB. Features include user authentication, profiles with experience and skills, posts with comments and likes, connection requests, messaging system, and job postings with applications. The API follows best practices for security, error handling, and data validation.",
+      technologies: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Mongoose",
+        "bcrypt",
+        "nodemon",
+        "dotenv",
+      ],
+      imageUrl: "../../assets/LinkedIn web app.png",
+      linkGit: "https://github.com/taboubi-oussema/linkedin-api-clone",
+    },
+    {
+      title: "Social Media Backend API",
+      Website: false,
+      reversed: true,
       description:
         "This is the backend API for a social media application that provides a range of powerful features to users. API is designed to provide a seamless and efficient experience, allowing users to interact with the app in meaningful ways.",
       technologies: [
@@ -23,7 +42,6 @@ export class WorkComponent implements OnInit {
         "express",
         "express-async-handler",
         "joi",
-
         "jsonwebtoken",
         "mongoose",
         "multer",
@@ -35,7 +53,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Real-Time Chat Application API",
       Website: true,
-      reversed: true,
+      reversed: false,
       description:
         "Developing  a chat platform that enables users to communicate instantly. This project involves setting up a server with WebSocket for real-time messaging, implementing secure user authentication, designing a functional chat interface, and managing various chat rooms.",
       technologies: [
@@ -56,7 +74,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Portfolio Website ",
       Website: true,
-      reversed: false,
+      reversed: true,
       description:
         "This project is a personal profile website I created to showcase my skills and interests. it features a clean and responsive design that adapts to various screen sizes. The site includes sections for my biography, skills, and projects, providing a comprehensive view of my background and capabilities.",
       technologies: ["HTML", "CSS", "JAVASCRIPT", "Font Awesome"],
@@ -67,7 +85,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Fun Geography Competition  Game",
       Website: true,
-      reversed: true,
+      reversed: false,
       description:
         "The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
       technologies: ["HTML", "CSS", "JAVASCRIPT"],
@@ -78,7 +96,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Admin Dashboard",
       Website: true,
-      reversed: false,
+      reversed: true,
       description:
         "An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
       technologies: [
