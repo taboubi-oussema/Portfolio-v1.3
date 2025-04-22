@@ -31,7 +31,14 @@
                   />
                 </div>
 
-                <p class="card-text mb-4">{{ project.description }}</p>
+                <ul
+                  class="card-text mb-4 list-unstyled"
+                  style="padding-left: 20px"
+                >
+                  <li class="mb-2" *ngFor="let point of project.description">
+                    • {{ point }}
+                  </li>
+                </ul> 
 
                 <div class="technologies" style="margin-bottom: 50px">
                   <span

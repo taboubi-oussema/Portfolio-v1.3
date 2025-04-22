@@ -14,8 +14,14 @@ export class WorkComponent implements OnInit {
       title: "Clone API LinkedIn",
       Website: false,
       reversed: false,
-      description:
-        "A comprehensive RESTful API clone of LinkedIn built with Node.js, Express, and MongoDB. Features include user authentication, profiles with experience and skills, posts with comments and likes, connection requests, messaging system, and job postings with applications. The API follows best practices for security, error handling, and data validation.",
+      description: [
+        "Comprehensive RESTful API clone of LinkedIn built with Node.js, Express, and MongoDB",
+        "User authentication and profile management with experience and skills",
+        "Posts functionality with comments and likes",
+        "Connection requests and messaging system",
+        "Job postings with applications",
+        "Implements security best practices, error handling, and data validation",
+      ],
       technologies: [
         "Node.js",
         "Express",
@@ -33,8 +39,13 @@ export class WorkComponent implements OnInit {
       title: "Social Media Backend API",
       Website: false,
       reversed: true,
-      description:
-        "This is the backend API for a social media application that provides a range of powerful features to users. API is designed to provide a seamless and efficient experience, allowing users to interact with the app in meaningful ways.",
+      description: [
+        "Robust backend API for social media application",
+        "Comprehensive user management system",
+        "Secure authentication and authorization",
+        "Efficient data handling and storage",
+        "File upload capabilities with Multer",
+      ],
       technologies: [
         "nodemon",
         "bcryptjs",
@@ -54,8 +65,13 @@ export class WorkComponent implements OnInit {
       title: "Real-Time Chat Application API",
       Website: true,
       reversed: false,
-      description:
-        "Developing  a chat platform that enables users to communicate instantly. This project involves setting up a server with WebSocket for real-time messaging, implementing secure user authentication, designing a functional chat interface, and managing various chat rooms.",
+      description: [
+        "Real-time messaging platform using WebSocket technology",
+        "Secure user authentication system",
+        "Multiple chat room support",
+        "Instant message delivery and notifications",
+        "Responsive chat interface design",
+      ],
       technologies: [
         "nodemon",
         "dotenv",
@@ -72,22 +88,32 @@ export class WorkComponent implements OnInit {
         "https://github.com/taboubi-oussema/Real-Time-Chat-Application-API",
     },
     {
-      title: "Portfolio Website ",
+      title: "Portfolio Website",
       Website: true,
       reversed: true,
-      description:
-        "This project is a personal profile website I created to showcase my skills and interests. it features a clean and responsive design that adapts to various screen sizes. The site includes sections for my biography, skills, and projects, providing a comprehensive view of my background and capabilities.",
+      description: [
+        "Clean and responsive personal portfolio website",
+        "Showcases projects and skills effectively",
+        "Optimized for all screen sizes",
+        "Modern and intuitive user interface",
+        "Interactive sections for biography and projects",
+      ],
       technologies: ["HTML", "CSS", "JAVASCRIPT", "Font Awesome"],
       imageUrl: "../../assets/personal profile website .png",
       linkWeb: "https://taboubi-oussema.github.io/Portfolio-v1.1/",
       linkGit: "https://github.com/taboubi-oussema/Portfolio-v1.1",
     },
     {
-      title: "Fun Geography Competition  Game",
+      title: "Fun Geography Competition Game",
       Website: true,
       reversed: false,
-      description:
-        "The Geography Competition is a simple yet engaging game where players guess the name of a country based on an image. It challenges users to identify various countries through visual clues, enhancing their geographical knowledge while having fun. The game is designed to be interactive and educational, providing instant feedback on guesses.",
+      description: [
+        "Interactive country guessing game",
+        "Visual clues through country images",
+        "Instant feedback on user guesses",
+        "Educational and entertaining gameplay",
+        "Progressive difficulty levels",
+      ],
       technologies: ["HTML", "CSS", "JAVASCRIPT"],
       imageUrl: "../../assets/Geography Competition game .png",
       linkWeb: "https://taboubi-oussema.github.io/Geography-competition/",
@@ -97,8 +123,13 @@ export class WorkComponent implements OnInit {
       title: "Admin Dashboard",
       Website: true,
       reversed: true,
-      description:
-        "An Admin Dashboard is a user interface (UI) designed to provide administrators with a comprehensive overview and control over a system or application. It consolidates data, metrics, and key functions into a single, easy-to-navigate interface.",
+      description: [
+        "Comprehensive administrative interface",
+        "Data visualization with Ngx Charts",
+        "Responsive and modern design",
+        "Intuitive navigation system",
+        "Consolidated metrics and analytics",
+      ],
       technologies: [
         "Angular",
         "CSS",
