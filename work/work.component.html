@@ -13,7 +13,7 @@
           [attr.data-aos-delay]="i * 100"
           [attr.data-aos-easing]="'ease-out-cubic'"
         >
-          <div
+          <div 
             class="row g-0"
             [ngClass]="{ 'flex-row-reverse': project.reversed }"
           >
@@ -38,7 +38,7 @@
                   <li class="mb-2" *ngFor="let point of project.description">
                     • {{ point }}
                   </li>
-                </ul> 
+                </ul>
 
                 <div class="technologies" style="margin-bottom: 50px">
                   <span
