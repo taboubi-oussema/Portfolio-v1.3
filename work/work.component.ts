@@ -106,7 +106,7 @@ export class WorkComponent implements OnInit {
     {
       title: "Fun Geography Competition Game",
       Website: true,
-      reversed: false,
+      reversed: false, 
       description: [
         "Interactive country guessing game",
         "Visual clues through country images",
